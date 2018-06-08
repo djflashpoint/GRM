@@ -1,137 +1,131 @@
-<!DOCTYPE HTML>
-<!--
-	Astral 2.0 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
+<title>djflashpoint</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/favicon.png" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {
+    background-color: #ccc;
+  }
 
-<head>
-	<link rel="shortcut icon" href="/favicon.png" />
-	<title>djflashpoint</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet" />
-	<script src="js/jquery.min.js"></script>
-	<script src="js/config.js"></script>
-	<script src="js/skel.min.js"></script>
-	<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-			<link rel="stylesheet" href="css/noscript.css" />
-		</noscript>
-	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-</head>
+  h1 {
+    font-family: "Montserrat", sans-serif
+  }
 
-<body class="homepage">
-	<!-- Wrapper-->
-	<div id="wrapper">
+  img {
+    margin-bottom: -7px
+  }
 
-		<!-- Nav -->
-		<nav id="nav">
-			<a href="#me" class="icon icon-user active"><span>Me</span></a>
-			<a href="#work" class="icon icon-folder"><span>Music</span></a>
-			<a href="#projects" class="icon icon-folder"><span>Projects</span></a>
-			<a href="https://twitter.com/djflashpoint" class="icon icon-twitter"><span>Twitter</span></a>
-		</nav>
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+</style>
 
-		<!-- Main -->
-		<div id="main">
+<body>
+  <!--«ďĵƒLÅSĥpōįnŧ»-->
+  <!-- Sidebar -->
+  <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+    <div class="w3-bar-block w3-center">
+      <!--<a href="/music.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Music Page</a>-->
+      <a href="https://codepen.io/djflashpoint" class="w3-bar-item w3-button w3-text-grey w3-hover-black">CodePen</a>
+      <a href="https://github.com/djflashpoint" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Github</a>
+      <a href="https://www.flickr.com/people/djflashpoint/" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Flickr</a>
+      <a href="https://djflashpoint.bandcamp.com/" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Bandcamp</a>
+      <a href="https://twitter.com/DJFlashpoint" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Twitter</a>
+      <a href="https://twitch.tv/djflashpoint" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Twitch</a>
+      <a href="https://youtube.com/user/Gabe777" class="w3-bar-item w3-button w3-text-grey w3-hover-black">YouTube</a>
+      <a href="https://kit.com/DJFlashpoint" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Kit</a>
+    </div>
+  </nav>
 
-			<!-- Me -->
-			<article id="me" class="panel">
-				<header>
-					<h1><div align="center">
-        <img src="images/djfp.jpg" height="51" width="310" align="center"/>
-    </div></h1>
-					<span class="byline">Musician/Web Developer</span>
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-content" style="max-width:100%">
 
-				</header>
-				<a href="#work" class="jumplink pic">
-									<span class="jumplink arrow icon icon-right"></span>
-				<img src="https://avatars2.githubusercontent.com/u/10094886?s=460&v=4" alt="" />
-				</a>
-			</article>
+    <!-- Header -->
+    <div class="w3-opacity">
+      <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+      <div class="w3-clear"></div>
+      <header class="w3-center w3-margin-bottom">
+        <h1><b><a href="/index.html"><img src="img/logo.png" width="100%"></a></b></h1>
+        <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+      </header>
+    </div>
 
-			<!-- Work -->
-			<article id="work" class="panel">
-				<center>
-					<header>
-						<h2>Music</h2>
-					</header>
-					<iframe style="border: 0; width: 350px; height: 522px;" src="https://bandcamp.com/EmbeddedPlayer/album=3414022202/size=large/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://djflashpoint.bandcamp.com/album/n36w115">N36W115 by djflashpoint</a></iframe>
-				</center>
-			</article>
+    <!-- Photo Grid   -->
+    <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+      <div class="w3-col s4 w3 iframe">
+        <iframe style="border: 0; width: 100%; height: 100%;" src="https://bandcamp.com/EmbeddedPlayer/album=1034101924/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/" seamless><a href="http://djflashpoint.bandcamp.com/album/neon-vegas-2">Neon Vegas 2 by djflashpoint</a></iframe>
+      </div>
+      <div class="w3-col s4 w3 iframe">
+        <iframe style="border: 0; width: 100%; height: 100%;" src="https://bandcamp.com/EmbeddedPlayer/album=3308365290/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="http://djflashpoint.bandcamp.com/album/desert-surf">Desert Surf by djflashpoint</a></iframe>
+      </div>
+      <div class="w3-col s4 w3 iframe">
+        <iframe style="border: 0; width: 100%; height: 100%;" src="https://bandcamp.com/EmbeddedPlayer/album=2624183756/size=large/bgcol=333333/linkcol=9a64ff/minimal=true/transparent=true/" seamless><a href="http://djflashpoint.bandcamp.com/album/electricus-ars-musica-ii">Electricus Ars Musica II by djflashpoint</a></iframe>
+      </div>
+      <div class="w3-col s4 w3 iframe">
+        <iframe style="border: 0; width: 100%; height: 100%;" src="https://bandcamp.com/EmbeddedPlayer/album=3693548713/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless><a href="http://djflashpoint.bandcamp.com/album/electricus-ars-musica">Electricus Ars Musica by djflashpoint</a></iframe>
+      </div>
+      <div class="w3-col s4 w3 iframe">
+        <iframe style="border: 0; width: 100%; height: 100%;" src="https://bandcamp.com/EmbeddedPlayer/album=2921232909/size=large/bgcol=333333/linkcol=fe7eaf/minimal=true/transparent=true/" seamless><a href="http://djflashpoint.bandcamp.com/album/neon-vegas">Neon Vegas by djflashpoint</a></iframe>
+      </div>
+      <div class="w3-col s4 w3 iframe">
+        <iframe style="border: 0; width: 100%; height: 100%;" src="https://bandcamp.com/EmbeddedPlayer/album=1804805418/size=large/bgcol=333333/linkcol=e32c14/minimal=true/transparent=true/" seamless><a href="http://djflashpoint.bandcamp.com/album/intergalactic-surf">Intergalactic Surf by djflashpoint</a></iframe>
+      </div>
+      <div class="w3-third">
+        <a href="https://flic.kr/p/27uyLva"> <img src="https://c1.staticflickr.com/1/893/42330088331_5ff9a4e04a_k.jpg" style="width:100%">
+        <a href="https://flic.kr/p/27uyL4i"> <img src="https://c1.staticflickr.com/1/881/42330086831_0497dc3fd9_k.jpg" style="width:100%"></div>
+      <div class="w3-third">
+        <a href="https://flic.kr/p/267Vvo8"> <img src="https://c1.staticflickr.com/1/957/41428815135_9ed7e86291_k.jpg" style="width:100%">
+        <a href="https://flic.kr/p/27uyKM6"> <img src="https://c1.staticflickr.com/1/948/42330085891_44487d96d7_k.jpg" style="width:100%"></div>
+      <div class="w3-third">
+        <a href="https://flic.kr/p/27uyKhZ"> <img src="https://c1.staticflickr.com/1/949/42330084261_6bbde8e3dd_k.jpg" style="width:100%">
+          </div>
+    </div>
+<!-- End Page Content -->
+  </div>
 
-			<!-- Projects -->
-			<article id="projects" class="panel">
-				<center>
-					<header>
-						<h2>Projects</h2>
-					</header>
-					<div class="imageGrid">
-						<div class="tile" style="background-image: url('https://c1.staticflickr.com/1/893/42330088331_5ff9a4e04a_k.jpg');">
-							<div class="textWrapper">
-								<h2>Jungle</h2>
-								<div class="content">Backyard plant life.</div>
-							</div>
-						</div>
-						<!--
--->
-						<div class="tile" style="background-image: url('https://c1.staticflickr.com/1/881/42330086831_0497dc3fd9_k.jpg');">
-							<div class="textWrapper">
-								<h2>Flower</h2>
-								<div class="content">A Flower in my Backyard.</div>
-							</div>
-						</div>
-						<!--
--->
-						<div class="tile" style="background-image: url('https://c1.staticflickr.com/1/957/41428815135_9ed7e86291_k.jpg');">
-							<div class="textWrapper">
-								<h2>Grass</h2>
-								<div class="content">Grass popping up from below.</div>
-							</div>
-						</div>
-						<!--
--->
-						<div class="tile" style="background-image: url('https://c1.staticflickr.com/1/948/42330085891_44487d96d7_k.jpg');">
-							<div class="textWrapper">
-								<h2>Dead Pine</h2>
-								<div class="content">A dying Pine Tree in my Backyard.</div>
-							</div>
-						</div>
-						<!--
--->
-						<div class="tile" style="background-image: url('https://c1.staticflickr.com/1/949/42330084261_6bbde8e3dd_k.jpg');">
-							<div class="textWrapper">
-								<h2>Splashback</h2>
-								<div class="content">Splashback on the wall from dirty rain.</div>
-							</div>
-						</div>
-					</div>
-				</center>
-			</article>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px; background-color: #ccc">
+    <a href="https://facebook.com/djflashpoint" <a/><i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <a href="https://instagram.com/djflashpoint" <a/><i class="fa fa-instagram w3-hover-opacity"></i>
+    <a href="https://pinterest.com/djflashpoint" <a/><i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <a href="https://twitter.com/djflashpoint" <a/><i class="fa fa-twitter w3-hover-opacity"></i>
+    <a href="https://www.linkedin.com/in/djflashpoint/" <a/><i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Made by <a href="https://github.com/djflashpoint" target="_blank" class="w3-hover-text-green">«ďĵƒLÅSĥpōįnŧ»</a></p>
+  </footer>
 
-		</div>
+  <script>
+    // Toggle grid padding
+    function myFunction() {
+      var x = document.getElementById("myGrid");
+      if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+      } else {
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+      }
+    }
+    // Open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.width = "100%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
 
-		<!-- Footer -->
-		<div id="footer">
-			<center>
-				<ul class="links">
-					<li>&copy; Muniz Productions 2018</li>
-				</ul>
-			</center>
-		</div>
-
-	</div>
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
 
 </body>
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@djflashpoint" />
 <meta name="twitter:title" content="djflashpoint" />
-<meta name="twitter:description" content="CSS Test Page" />
-<meta name="twitter:image" content="https://djflashpoint.github.io/favicon.png" />
+<meta name="twitter:description" content="Music page" />
+<meta name="twitter:image" content="/img/favicon.png" />
 
 </html>
